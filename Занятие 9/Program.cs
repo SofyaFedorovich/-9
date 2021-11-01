@@ -16,20 +16,20 @@ namespace Занятие_9
             int y = 0;
             try
             {
-                x = Convert.ToInt32(Console.ReadLine()); //случай, когда введено нецелое число для Х
+                x = Convert.ToInt32(Console.ReadLine()); //случай, когда число Х имело неверный формат
             }
             catch (FormatException)
             {
-                Console.Write("Введенное число X имело неверный формат!");
+                Console.WriteLine("Введенное число X имело неверный формат!");
             }
                         Console.Write("Введите целое число y=");
             try
             {
-                y = Convert.ToInt32(Console.ReadLine()); //случай, когда введено нецелое число для Y
+                y = Convert.ToInt32(Console.ReadLine()); //случай, когда число Y имело неверный формат
             }
             catch (FormatException)
             {
-                Console.Write("Введенное число Y имело неверный формат!");
+                Console.WriteLine("Введенное число Y имело неверный формат!");
             }
                 Console.WriteLine("Введите тип операции: " +
                 "1 - сложение, " +
